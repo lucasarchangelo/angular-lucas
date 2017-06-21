@@ -12,21 +12,34 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Nome</th>
-        <th>Idade</th>
-        <th>Email</th>
-        <th>Tipo contato</th>
+        <th>Nome Completo</th>
+        <th>Telefone Fixo</th>
         <th>Telefone</th>
+        <th>Email</th>
+        <th>Quantidade</th>
+        <th>Operadora Atual</th>
+        <th>Razão Social</th>
+        <th>CNPJ</th>
+        <th>Tipo Contato</th>
         <th>Ofertou</th>
+        <th>Atendido</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let pessoa of pessoas" >
         <td>{{ pessoa.nomeCompleto }}</td>
-        <td>{{ pessoa.idade }}</td>
-        <td>{{ pessoa.email }}</td>
-        <td>{{ pessoa.tipoContato }}</td>
+        <td>{{ pessoa.telefoneFixo }}</td>
         <td>{{ pessoa.telefoneContato }}</td>
+        <td>{{ pessoa.email }}</td>
+        <td>{{ pessoa.quantidade }}</td>
+        <td>{{ pessoa.opAtual }}</td>
+        <td>{{ pessoa.razaoSocial }}</td>
+        <td>{{ pessoa.cnpj }}</td>
+        <td>{{ pessoa.tipoContato }}</td>
+        <td>
+            <button type="button" class="btn btn-success">Sim</button>
+            <button type="button" class="btn btn-danger">Não</button>
+        </td>
         <td>
             <button type="button" class="btn btn-success">Sim</button>
             <button type="button" class="btn btn-danger">Não</button>
